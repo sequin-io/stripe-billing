@@ -4,7 +4,7 @@ This Stripe billing portal is a Next.js/Tailwind app. On the back-end, it is pow
 
 ![](./docs/hero-image.png)
 
-This repo uses plain `node-postgres` (`pg`) for all SQL queries. Example repos with popular Node ORMs coming soon.
+This repo uses plain `node-postgres` (`pg`) for all SQL queries.
 
 ### Similar repos
 
