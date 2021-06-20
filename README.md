@@ -33,13 +33,13 @@ cp .env.example .env.local
 You'll see in `.env.local` that there are two env variables you need to set:
 
 ```bash
-PGCONN=
+DATABASE_URL=
 STRIPE_KEY=
 ```
 
 For `STRIPE_KEY`, grab a key [from your Stripe dashboard](https://dashboard.stripe.com/apikeys).
 
-For `PGCONN`, use the Postgres connection URL provided by Sync Inc in the following step.
+For `DATABASE_URL`, use the Postgres connection URL provided by Sync Inc in the following step.
 
 **2. Setup your Sync Inc database**
 
@@ -47,7 +47,7 @@ With Sync Inc, you can provision a real-time Postgres replica in AWS with all yo
 
 [Sign-up for an account here](https://app.syncinc.so/signup) (free to start).
 
-At the end of the on-boarding process, Sync Inc displays your PG connection URL. Copy and paste this URL as your `PGCONN`:
+At the end of the on-boarding process, Sync Inc displays your PG connection URL. Copy and paste this URL as your `DATABASE_URL`:
 
 ![](./docs/connect-url.png)
 

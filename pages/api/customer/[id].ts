@@ -1,7 +1,7 @@
 import { Client } from "pg";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-const client = new Client({ connectionString: process.env.PGCONN });
+const client = new Client({ connectionString: process.env.DATABASE_URL });
 client.connect();
 
 export default async function handler(
