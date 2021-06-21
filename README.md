@@ -1,6 +1,6 @@
 # Plug-and-play Stripe billing portal
 
-This Stripe billing portal is a Next.js/Tailwind app. On the back-end, it is powered by a Postgres replica containing Stripe data (thanks to Sync Inc).
+This Stripe billing portal is a Next.js/Tailwind app. On the back-end, it is powered by a Postgres replica containing Stripe data (via [Sync Inc](https://syncinc.so/)).
 
 ![](./docs/hero-image.png)
 
@@ -54,6 +54,10 @@ At the end of the on-boarding process, Sync Inc displays your PG connection URL.
 That's it! Now, on `/`, you'll see a list of customers. Click on one to see their billing portal:
 
 ![](./docs/customer-list.png)
+
+### Warning before pushing to prod
+
+**There is no login or authentication scheme for the API endpoints in this example**. You must be sure to wrap the API in authentication before pushing to production.
 
 ### How it works
 
